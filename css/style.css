@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url('../fonts/Inter.ttf');
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url('../fonts/Outfit.ttf');
+}
+
+body {
+    font-family: "Outfit";
+    font-size: 1.2rem;
+    background: #2E3944;
+}
+
+
+.card-container {
+    background: #FFFFFF;
+    padding: 3rem;
+    border-radius: 1.3rem;
+}
+
+.h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+.home, .createAccount {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-submit-container {
+    display: flex;
+    justify-content: center !important;
+}
+
+
+.submit-btn {
+    padding: 1rem;
+}
+
+
+.form-control {
+    padding: 1rem !important;
+    border: #1f2833 0.6px solid;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 2px 1px rgba(0, 128, 0, 0.4);
+}
+
