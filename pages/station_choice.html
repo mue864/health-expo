@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <title>Choose Station</title>
+</head>
+<body>
+    
+
+    <div class="h2 pt-3 text-center heading">Welcome Station</div>
+    <section class="station-choice">
+        <div class="test">
+
+            <!-- for desktop -->
+            <form id="station-form" class="d-none d-md-block">
+                <div class="labels">
+                    <!-- row 1 -->
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station1">
+                                <input class="form-check-input" type="radio" name="station" value="station1" required>
+                                Station 1
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station2">
+                                <input class="form-check-input" type="radio" name="station" value="station2">
+                                Station 2
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station3">
+                                <input class="form-check-input" type="radio" name="station" value="station3">
+                                Station 3
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- row 2 -->
+                    <div class="row">
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station4">
+                                <input class="form-check-input" type="radio" name="station" value="station4">
+                                Station 4
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station5">
+                                <input class="form-check-input" type="radio" name="station" value="station5">
+                                Station 5
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station6">
+                                <input class="form-check-input" type="radio" name="station" value="station6">
+                                Station 6
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- row 3 -->
+                    <div class="row">
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station7">
+                                <input class="form-check-input" type="radio" name="station" value="station7">
+                                Station 7
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station8">
+                                <input class="form-check-input" type="radio" name="station" value="station8">
+                                Station 8
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station9">
+                                <input class="form-check-input" type="radio" name="station" value="station9">
+                                Station 9
+                            </label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="btn-submit-container">
+                    <button type="button" class="btn btn-dark submit-btn" onclick="redirectToStation()">Go</button>
+                </div>
+            </form>
+
+            <!-- for mobile -->
+            <form id="station-form-mobile" class="d-md-none">
+                <div class="labels">
+                    <!-- row 1 -->
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station1-mobile">
+                                <input class="form-check-input" type="radio" name="station" value="station1" required>
+                                Station 1
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station2-mobile">
+                                <input class="form-check-input" type="radio" name="station" value="station2">
+                                Station 2
+                            </label>
+                        </div>
+                       
+                    </div>
+    
+                    <!-- row 2 -->
+                    <div class="row">
+
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station3-mobile">
+                                <input class="form-check-input" type="radio" name="station" value="station3">
+                                Station 3
+                            </label>
+                        </div>
+
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station4-mobile">
+                                <input class="form-check-input" type="radio" name="station" value="station4">
+                                Station 4
+                            </label>
+                        </div>
+
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station5-mobile">
+                                <input class="form-check-input" type="radio" name="station" value="station5">
+                                Station 5
+                            </label>
+                        </div>
+                        
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station6-mobile">
+                                <input class="form-check-input" type="radio" name="station" value="station6">
+                                Station 6
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- row 3 -->
+                    <div class="row">
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station7-mobile">
+                                <input class="form-check-input" type="radio" name="station" value="station7">
+                                Station 7
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station8-mobile">
+                                <input class="form-check-input" type="radio" name="station" value="station8">
+                                Station 8
+                            </label>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <label class="custom" id="station9-mobile">
+                                <input class="form-check-input" type="radio" name="station" value="station9">
+                                Station 9
+                            </label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="btn-submit-container">
+                    <button type="button" class="btn btn-dark submit-btn" onclick="redirectToStation()">Go</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
+
+<!-- <script>
+function redirectToStation() {
+    // Get the selected station
+    const selectedStation = document.querySelector('input[name="station"]:checked');
+
+    if (selectedStation) {
+        // Define the pages for each station
+        const pages = {
+            station1: 'station1.html',
+            station2: 'station2.html',
+            station3: 'station3.html'
+        };
+        
+        // Redirect to the selected station’s page
+        window.location.href = pages[selectedStation.value];
+    } else {
+        alert("Please select a station.");
+    }
+}
+</script> -->
+
+</body>
+</html>

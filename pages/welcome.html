@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Individual Info</title>
+</head>
+<body>
+
+    <div class="h2 pt-3 text-center heading">Welcome Station</div>
+
+
+    <section class="welcome">
+        <div class="container col-sm-10 col-md-4">
+
+            <div class="card-container">
+                <form action="#">
+    
+                    <!-- Choosing Mr or Mrs 
+                    <div class="col-sm-4 col-lg-2 pt-4">
+                        <label for="gender" class="pb-2">Title</label>
+                        <select name="gender" id="gender" class="form-select form-dropdown">
+                            <option value="" disabled selected>Select title</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Ms">Ms</option>
+                        </select>
+                    </div>
+                      -->
+                    
+                    <!-- inserting data -->
+                    <div class="mb-3">
+                        <label for="fname" class="form-label">First Name *</label>
+                        <input type="text" class="form-control form-data" id="fname" aria-describedby="userFirstName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lname" class="form-label">Last Name *</label>
+                        <input type="text" class="form-control form-data" id="lname" aria-describedby="userLastName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control form-data" id="age">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" class="form-control form-data">
+                    </div>
+                    <div class="mb-3">
+                        <label for="number">Phone</label>
+                        <input type="number" name="number" id="number" class="form-control form-data">
+                    </div>
+                    
+                <div class="btn-submit-container pt-4">
+                    <button type="submit" class="btn btn-dark submit-btn">Submit</button>
+                </div>
+            </form>
+            </div>
+    
+    
+        </div>
+    </section>
+
+
+
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

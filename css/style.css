@@ -23,26 +23,32 @@
 body {
     font-family: "Outfit";
     font-size: 1.2rem;
-    background: #2E3944;
+    background: #f5f5f5;
+    color: #333333;
 }
 
 
 .card-container {
     background: #FFFFFF;
-    padding: 3rem;
+    padding: 4rem;
     border-radius: 1.3rem;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
 }
 
 .h2 {
     font-family: "Poppins", sans-serif;
 }
 
-.home, .createAccount {
+.home, .createAccount, .welcome {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.welcome {
+    height: 90vh !important;
 }
 
 .btn-submit-container {
@@ -52,16 +58,95 @@ body {
 
 
 .submit-btn {
-    padding: 1rem;
+    padding: 1rem 2rem;
+    background: #0077b6;
+    border: none;
 }
 
 
 .form-control {
     padding: 1rem !important;
-    border: #1f2833 0.6px solid;
+    border: #989798 1px solid;
 }
 
 .form-control:focus {
     box-shadow: 0 0 2px 1px rgba(0, 128, 0, 0.4);
 }
 
+/* welcome html */
+.form-dropdown {
+    padding: 0.8rem;
+}
+
+
+/* station choice */
+.station-choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem; /* Add padding to avoid touching edges on small screens */
+}
+
+
+.custom {
+    width: 180px;
+    background: #fff;
+    border: 2px solid #ccc;
+    padding: 2rem 3rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.7rem;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+}
+
+
+.row label  {
+    cursor: pointer;
+}
+.custom input[type="radio"] {
+    display: none;
+}
+
+.active {
+    background-color: #4caf50; /* Highlight color */
+    color: white; /* Text color for visibility */
+    border-color: #4caf50; /* Match border to highlight */
+}
+
+.row label:hover {
+    transition: all 0.3s ease-in-out;
+    background: #4caf50;
+    color: #fff;
+}
+
+
+/* .labels {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+} */
+
+.highlighted {
+    background-color: #4caf50;
+    color: white;
+    border-color: #4caf50;
+  }
+
+
+  /* input style */
+
+  .input-style {
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    
+  }
+
+  .info {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
