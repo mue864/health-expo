@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Air</title>
+</head>
+<body>
+    <section class="info">
+        <div class="container">
+            <!-- <p>Name: <span class="individual-name"></span></p> -->
+
+            <!-- this has to disappear when the individual has been found -->
+            <form action="#">
+                <!-- search the name of the individual in the db first -->
+                 <label for="id-search" class="form-label">ID</label>
+                 <input type="text" name="id-search" id="id-search" class="form-control input-style">
+
+                 <div class="btn-submit-container pt-3">
+                    <button type="submit" class="btn btn-dark submit-btn">Search</button>
+                </div>
+            </form>
+
+            <div class="h3 pt-5">Measurements</div>
+            <!-- insert peak flow meter results -->
+             <form action="#" class="pt-3">
+                <label for="pfm" class="form-label">Peak Flow Meter Results </label>
+                <input type="text" name="pfm" id="hydrotherapy" class="form-control input-style">
+
+                <div class="btn-submit-container pt-3">
+                    <button type="submit" class="btn btn-dark submit-btn">Submit</button>
+                </div>
+             </form>
+        </div>
+    </section>
+</body>
+</html>
